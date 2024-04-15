@@ -1,0 +1,141 @@
+/* TODO:ELEMENTS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    background-image: linear-gradient(to bottom left, #41095d, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: #00000074;
+}
+
+
+/* TODO:CLASSESANDIDS */
+.off-screen-menu {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;    
+    justify-content: center;
+    text-align: center; */
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color:	white;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.off-screen-menu button {
+    color: white;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-bottom: 100px;
+}
+.off-screen-menu button:hover{
+    transition: 2s;
+    letter-spacing: 5px;
+    box-shadow: 0px 0px 10px 5px  #41095d;
+    border-radius: 10px;
+}
+.logo{
+    width: 100px;
+}
+.lower{
+    position: relative;
+    top: 60%;
+    left: 40%;
+}
+.center{
+    position: relative;
+    left: 40%;
+    bottom: 5%;
+    
+}
+.centerSpan{
+    font-size: 30px;
+}
+.upper{
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+.submitImg{
+    width: 20px;
+    border:none;
+}
+.submitMessage{
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    right: 5%;
+}
+.message{
+    padding-right: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.357);
+    border-radius: 20px;
+    border: none;
+}
+.messageArea{
+    margin-top: 45%;
+}
+#clickToRecord{
+    background-color: rgba(0, 0, 0, 0.503);
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px  #41095d;
+    border-radius: 10px;
+}
