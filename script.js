@@ -60,7 +60,7 @@ document.getElementById("clickToRecord").addEventListener('click', function() {
 //     console.error(error);
 //   }
 // });
-const API_KEY = "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";
+// const API_KEY = "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";
 const submitButton = document.querySelector(".submitMessage");
 
 async function getMessage() {
