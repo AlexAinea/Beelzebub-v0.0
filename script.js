@@ -60,13 +60,14 @@ document.getElementById("clickToRecord").addEventListener('click', function() {
 //     console.error(error);
 //   }
 // });
-// const API_KEY = "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";
+
 const submitButton = document.querySelector(".submitMessage");
 
 async function getMessage() {
+  const API_KEY = "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";
   console.log("clicked");
   const options = {
-    method: 'GET',
+    method: 'POST',
     headers: {
       'Authorization': `Bearer ${API_KEY}`,
       'Content-Type': 'application/json'
